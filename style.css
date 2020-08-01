@@ -1,0 +1,232 @@
+/* 
+
+This CSS file is contains the CSS rule sets for 
+    - index.html
+    - any universal elements that all pages use
+
+The CSS for the take-action.html is in take-action.css
+
+*/
+
+/************************************************/
+/************* UNIVERSAL ELEMENTS ***************/
+/************************************************/
+
+
+body,
+html {
+  height: 100%;
+  font-size: 20px; /* Change the font size*/
+  font-family: 'Lato', sans-serif;/* Change the font */
+  line-height: 1.5em; /* Change the line height size*/
+  margin: 0em;
+  color: white; /* Change the font color*/
+  background-color: #fbf5e6; /* Change the background color */
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 60px;
+
+  font-family: 'Shrikhand', cursive;
+  color: #43d6b9ff;
+  text-align: center;
+}
+
+h2 {
+  font-size: 25px;
+  font-family: 'Shrikhand', cursive;
+  text-spacing: 5px;
+  letter-spacing: 1.5px;
+  color: white;
+  text-align: center;
+  line-height: 1.3em;
+}
+
+
+p a {
+  color: #43d6b9ff;
+  text-decoration: none;
+}
+
+/************************************************/
+/*************** CSS FOR NAV BAR ****************/
+/************************************************/
+
+
+
+ul.nav-bar {
+  /* Styling for the <ul class="nav-bar"> element */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #00547f;
+  border-style: solid;
+  border-color: #00547f;
+  letter-spacing: 1.5px;
+  font-family: 'Shrikhand', cursive;
+}
+
+
+li.nav {
+  /* Styling for the <li class="nav"> element */
+  float: right;
+  font-size: 15px;
+}
+
+
+li.nav a {
+  /* Styling for the <a> elements in <li class="nav"> */
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+li.nav a:hover {
+  /* Styling for the <a> elements when the mouse is hovering in <li class="nav"> */
+  background-color: #00547f;
+  color: #f04d33;
+}
+
+ul {
+  list-style-type: none;
+  float: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Shrikhand', cursive;
+}
+
+
+/************************************************/
+/*********** CSS FOR FLEXBOX HEADING ************/
+/************************************************/
+
+.flex-container {
+  display: flex; /* Set the flexbox display */
+  flex-direction: row; /* Configure the flex items to row */
+  flex-wrap: nowrap; /* Don’t wrap the flex items */
+  justify-content: center; /* Justify the flex items to the center */
+  align-items: center; /* Align the flex items to the center */
+
+  /* Design properties */
+  background-color: #00547f;
+  padding: 5px;
+
+  /* Positioning properties */
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  top: 40%; /* Change this value to move the box up or down */
+
+
+  /*border-style: dotted;*/
+}
+
+
+.heading-home {
+  padding: 2%;
+  color: #ffffff;
+  font-size: 50px;
+  letter-spacing: 10px;
+  line-height: 60px;
+  text-align: center;
+  font-family: 'Shrikhand', cursive;
+
+
+  /*border-style: dotted;*/
+}
+
+
+.intro-text {
+  background-color: #f04d33; /* Add your own background color */
+  padding: 4%;
+  margin: 3%;
+  color: #ffffff; /* Add the color of your font */
+  font-size: 20px; /* Add your font size*/
+  letter-spacing: 2px; /* Adds space between letters */
+  line-height: 1.4em; /* Adds space between lines */
+  text-align: center;
+
+  /*border-style: dotted;*/
+}
+
+/************************************************/
+/*************** PARALLAX SCROLL ****************/
+/************************************************/
+
+/*-----------TEXT SECTIONS-----------*/
+
+
+
+.text-section {
+  background-color: #f04d33;
+  padding: 50px 60px;
+  margin: 50px;
+  text-align: center;
+}
+
+.text-section2 {
+  background-color: #00547f;
+  padding: 50px 60px;
+  margin: 50px;
+  text-align: center;
+}
+
+/*---------IMAGE STYLING + PARALLAX PROPERTY---------*/
+
+
+.main-message {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #43d6b9ff;
+  background-size: cover;
+  min-height: 100%; /* This adjusts the height of the image */
+  background-attachment: fixed;
+}
+
+  
+.image-one {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #43d6b9ff;
+  background-size: cover;
+  min-height: 100%; /* This adjusts the height of the image */
+  background-attachment: fixed;
+
+
+  
+}
+  
+
+
+.main-message {
+  background-image: url("https://cdn.glitch.com/a9eff338-4fd3-4a0d-b3e2-6978d852ec44%2FTT_Voting%20and%20Voices_5%20Myths_3.png?v=1596051346231");
+}
+
+
+.image-one {
+  background-image: url("https://cdn.glitch.com/a9eff338-4fd3-4a0d-b3e2-6978d852ec44%2F1_gse87CcjHNpp475ezxt_BA.png?v=1596052880992");
+}
+
+
+
+/*-----------IMAGE ATTRIBUTIONS (if required)-----------*/
+.attributions {
+  font-size: 12px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+/******************************************************/
+/***** CHANGE INDEX.HTML CSS BASED ON SCREEN SIZE *****/
+/******************************************************/
