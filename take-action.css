@@ -1,0 +1,314 @@
+/******************************************************/
+/************** CSS FOR TAKE-ACTION.HTML **************/
+/******************************************************/
+
+.page-header-action {
+  width: 100%;
+  position: absolute;
+  text-transform: uppercase;
+  background-color: #0D38D3;
+  font-family: 'Shrikhand', cursive;
+}
+
+.main-message-1 {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #00547f;
+  background-size: cover;
+  min-height: 100%; /* This adjusts the height of the image */
+  background-attachment: fixed;
+  background-image: url("https://cdn.glitch.com/a9eff338-4fd3-4a0d-b3e2-6978d852ec44%2FSOC-voting-image-TEXTLESS.jpg?v=1596052884782");
+}
+
+.text-section {
+  background-color: #f04d33;
+  padding: 50px 60px;
+  margin: 50px;
+  text-align: center;
+}
+
+.text-section-0 {
+  background-color: #00547f;
+  padding: 50px 60px;
+  margin: 50px;
+  text-align: center;
+}
+
+.text-section-3 {
+  background-color: #f04d33;
+  padding: 50px 60px;
+  margin: 50px;
+  text-align: center;
+}
+
+.text-section-5 {
+  background-color: #f04d33;
+  padding: 50px 60px;
+  margin: 50px;
+  text-align: center;
+}
+
+
+  
+.image-one1 {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #43d6b9ff;
+  background-size: cover;
+  min-height: 100%; /* This adjusts the height of the image */
+  background-attachment: fixed;
+  background-image: url("https://cdn.glitch.com/a9eff338-4fd3-4a0d-b3e2-6978d852ec44%2F2020-0716-facebook-misinformation-voting-1200x630_200716_030601.jpg?v=1596052892776");
+
+
+  
+}
+
+.image-twoo {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #43d6b9ff;
+  background-size: cover;
+  min-height: 100%; /* This adjusts the height of the image */
+  background-attachment: fixed;
+  background-image: url("https://cdn.glitch.com/a9eff338-4fd3-4a0d-b3e2-6978d852ec44%2F636585425989330000.jpg?v=1596126612717");
+
+
+  
+}
+
+
+
+.text-section-2 {
+  background-color: #00547f;
+  padding: 50px 60px;
+  margin: 50px;
+  text-align: center;
+}
+
+.text-section-4 {
+  background-color: #00547f;
+  padding: 50px 60px;
+  margin: 50px;
+  text-align: center;
+}
+
+
+/******************************************************/
+/***************** ACTION ITEM LIST *******************/
+/******************************************************/
+
+/* Flexbox container that holds all flex items */
+.flex-container-action {
+  display: flex;
+
+  position: absolute;
+  padding: 0.5em 0;
+  align-items: center;
+
+  left: 5%;
+  right: 5%;
+
+  margin: 5% 0;
+  width: 90%;
+
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: start;
+  /*border-style: dotted;*/ /*Uncomment to see the outline of the container*/
+}
+
+/* Left box under title; item in .flex-container */
+.action-info-container {
+  width: 100%;
+  margin-right: 5%;
+  margin-left: 0;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 35px;
+  font-size: 16px;
+  flex-grow: 2;
+  /*border-style: dotted;*/ /*Uncomment to see the outline of the container*/
+}
+
+.action-info-container img{
+  width: 100%;
+}
+
+/* Right box under title; item in .flex-container */
+.action-list-container {
+  width: 75%;
+  padding: 35px;
+  margin: 5%;
+  flex-grow: 1;
+  background-color: #f04d33;
+  /*border-style: dotted;*/ /*Uncomment to see the outline of the container*/
+}
+
+/* Holds all elements related to the action item list; inside the action-list-container */
+#checklist {
+  background-color: #345e99;
+  border-radius: 15px;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  border-style: solid;
+  border-color: #43d6b9ff;
+  /*border-style: dotted;*/ /*Uncomment to see the outline of the container*/
+}
+
+
+/* Header in the list container */
+#checklist-header {
+  text-align: center;
+  color: #ffffff;
+  letter-spacing: 1px;
+  /*border-style: dotted;*/ /*Uncomment to see the outline of the container*/
+}
+
+/* Intructions inside the list container */
+#instructions {
+  font-family: 'Shrikhand', cursive;
+  text-align: center;
+  font-style: italic;
+  color: #ffffff;
+  font-size 25pt;
+  /*border-style: dotted;*/ /*Uncomment to see the outline of the container*/
+  
+}
+
+/* The div container for the unordered action item list */
+#my-list {
+  padding: 10px 0 0 0;
+  margin: 0;
+  font-size: 15pt;
+  float: center;
+}
+
+/* Styling for individual action list items */
+#my-list li {
+  cursor: pointer;
+  padding-top: 8px;
+  padding-right: 20px;
+  padding-bottom: 8px; 
+  padding-left: 35px;
+  position: relative;
+  list-style-type: none;
+  transition: 0.2s;
+  width: 85%;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  float: center;
+  /*border-style: dotted;*/ /*Uncomment to see the outline of the container*/
+}
+
+/* Styling for the check squares added at the beginning of each list item */
+#my-list li::before {
+  content: "";
+  position: absolute;
+  border-color: #345e99;
+  border-style: solid;
+  border-width: 2px;
+  
+  top: 15px;
+  left: 13px;
+  height: 10px;
+  width: 10px;
+}
+/* 
+A note on the checkbox: This is actually just a neat trick. Before the 
+item is clicked, the CSS file inserts a blank space through the content: "";
+property. You can draw a border around this blank space so it appears like 
+a box. After the item is clicked, new CSS rules are applied that remove the 
+border from two sides and rotate the blank space by 45 degress so it looks 
+like a checkmark!
+*/
+
+/* Change background color when cursor hovers over list items */
+#my-list li:hover {
+  background: #f3f3f3;
+  color: #0D38D3;
+}
+
+/* Change check square color when cursor hovers over */
+#my-list li:hover::before {
+  border-color: #0D38D3;
+  border-style: solid;
+}
+
+/* When marked complete (i.e. clicked on) add strikethrough */
+#my-list li.all-done {
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+#my-list li.all-done::before {
+  content: "";
+  position: absolute;
+  border-color: #0D38D3;
+  border-style: solid;
+  border-width: 0 1px 1px 0;
+  top: 5px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 10px;
+  width: 5px;
+}
+
+
+
+/******************************************************/
+/** CHANGE TAKE-ACTION.HTML CSS BASED ON SCREEN SIZE **/
+/******************************************************/
+
+/* IF THE SCREEN IS ~~700 OR LESS~~ IMPLEMENT THESE RULES */
+
+@media only screen and (max-width: 700px) {
+
+  .flex-container-action {
+    flex-wrap: wrap;
+  }
+}
+
+/* IF THE SCREEN IS ~~701 OR MORE~~ IMPLEMENT THESE RULES */
+
+@media only screen and (min-width: 701px) {
+  
+  .flex-container-action {
+    flex-wrap: wrap;
+  }
+
+  .left-container {
+    width: 50%;
+    margin-right: 10%;
+  }
+}
+
+/* IF THE SCREEN IS ~~1000 OR MORE~~ IMPLEMENT THESE RULES */
+@media only screen and (min-width: 1000px) {
+
+  .flex-container-action {
+    flex-wrap: nowrap;
+  }
+}
+
+/* IF THE SCREEN IS ~~1250 OR MORE~~ IMPLEMENT THESE RULES */
+@media only screen and (min-width: 1250px) {
+  
+  .flex-container-action {
+    flex-wrap: nowrap;
+  }
+
+  #list-container {
+    background-color: #ff0000;
+    border-radius: 15px;
+    padding: 10px 10px 20px 20px;
+  }
+
+  .left-container {
+    width: 50%;
+    margin-right: 10%;
+  }
+}
